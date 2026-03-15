@@ -49,8 +49,19 @@ The `Brewfile` captures:
 - **Casks** — GUI applications (e.g. VS Code, Docker, Slack, Zoom)
 - **VS Code Extensions** — all installed extensions
 
+## Claude Slash Commands
+
+If you use [Claude Code](https://claude.ai/claude-code), the following slash commands are available:
+
+| Command | Description |
+|---------|-------------|
+| `/tour` | Guided walkthrough of the project for new engineers |
+| `/implement` | Generate a new compliant shell script from a description |
+| `/check` | Audit all scripts for compliance and update docs |
+| `/menu` | Show all available commands |
+
 ## Notes
 
-- Both scripts must be run from the repo root where `Brewfile` lives
+- Scripts use `SCRIPT_DIR` internally and can be run from any directory
 - After `Setup.sh` completes, restart your terminal for all PATH changes to take effect
 - Re-run `CreateBrewFile.sh` any time you install new apps to keep the `Brewfile` up to date

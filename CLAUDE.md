@@ -86,9 +86,18 @@ fi
 # Script logic here
 ```
 
+## Slash Commands
+
+Slash commands live in `.claude/commands/`. Available commands:
+
+- `/tour` — Guided project walkthrough for new engineers
+- `/implement` — Generate a new compliant shell script from requirements
+- `/check` — Audit all scripts for compliance and update docs
+- `/menu` — Display the full command menu
+
 ## Notes
 
-- Both scripts must be run from the project root directory (where `Brewfile` lives)
+- Scripts use `SCRIPT_DIR` internally and can be run from any directory — no need to `cd` to the project root first
 - `Setup.sh` requires an internet connection
 - On Apple Silicon Macs, Homebrew installs to `/opt/homebrew`; on Intel Macs it installs to `/usr/local`
 - After running `Setup.sh`, restart your terminal or run `source ~/.zshrc` for PATH changes to take effect
