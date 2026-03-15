@@ -31,6 +31,16 @@ Use `--dry-run` to see the compliance report and fix plan without making any cha
 
 ---
 
+### /tour
+Gives a guided walkthrough of the project for engineers who are new to the codebase. Covers the purpose of each file, the two core workflows, shell script rules, and first steps to get productive.
+
+**Example:**
+```
+/tour
+```
+
+---
+
 ### /menu
 Displays this command menu.
 
