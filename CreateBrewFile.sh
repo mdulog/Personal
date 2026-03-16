@@ -27,3 +27,4 @@ echo "Creating ${BREWFILE}"
 brew bundle dump --file="${SCRIPT_DIR}/${BREWFILE}" --verbose
 
 echo "Done. ${BREWFILE} has been updated."
+exit 0

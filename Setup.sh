@@ -51,3 +51,4 @@ git config --global user.name "mdulog"
 git config --global user.email "madulog@gmail.com"
 
 echo "Done. Restart your terminal for all PATH changes to take effect."
+exit 0
