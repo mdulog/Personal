@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": ["Bash(*)", "Read(*)", "Write(*)", "Edit(*)", "Glob(*)", "Grep(*)"]
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "learning-output-style@claude-plugins-official": true,
+    "firecrawl@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": false,
+    "superpowers@claude-plugins-official": true
+  },
+  "effortLevel": "high",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"REMINDER: You MUST use Context7 resolve-library-id + query-docs before referencing ANY technology, version, library, framework, or tool. Use training data for reasoning only — never for technology-specific facts, versions, APIs, or licensing.\"}'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
